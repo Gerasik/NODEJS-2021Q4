@@ -15,7 +15,7 @@ const getFlagValue = (flag) => {
   return flagInd !== -1 ? config[flagInd + 1] : false
 }
 
-const configCheck = () => {
+const configCheck = (config) => {
   if (config.length === 0) {
     throw new MyError(errors.EMPTY_CLI)
   }
