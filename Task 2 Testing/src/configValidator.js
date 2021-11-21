@@ -11,6 +11,7 @@ const config = process.argv.slice(2).map((it) => checkFlag(it))
 
 const getFlagValue = (flag) => {
   const flagInd = config.indexOf(checkFlag(flag))
+  console.log(flag, flagInd, config)
   return flagInd !== -1 ? config[flagInd + 1] : false
 }
 
